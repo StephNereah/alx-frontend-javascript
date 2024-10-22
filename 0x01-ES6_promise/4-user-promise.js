@@ -1,5 +1,9 @@
-export default function signUpUser(firstName, lastName) {
+export default async function signUpUser(firstName, lastName) {
   return new Promise((resolve) => {
-    resolve({ firstName, lastName });
+    const dict = {
+      firstName,
+      lastName,
+    };
+    resolve(dict);
   });
 }
